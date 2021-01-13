@@ -1,14 +1,9 @@
 body{
-    background-color: rgb(125, 125, 125);
+    background-color: rgb(206, 201, 201);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6em;
     margin:0;
-}
-#welcome-section{
-    height:100vh;
-    width: 100%;
-    background-color: rgb(125, 125, 125);
 }
 
 #navbar-line{
@@ -20,7 +15,6 @@ body{
     background-color: black;
     z-index: 1;
 }
-
 #navbar{
     background-color: rgb(102, 3, 3); ;
     width: 100%;
@@ -29,14 +23,14 @@ body{
     left:0;
     z-index: 1;
 }
-ul{
+#navbar ul{
     display:flex;
     list-style: none;
 }
-li {
+#navbar li{
     flex:0 0 140px; 
 }
-a {
+#navbar a {
     color: white;
     text-decoration: none;
     }
@@ -46,3 +40,46 @@ a {
 #navbar a:active{
     color:yellowgreen;
 }
+
+#welcome-section{
+    height:100vh;
+    width: 100%;
+    border-bottom-style: dotted;
+    color:black;
+    display:flex;
+    flex-direction: row;
+}
+.welcome-col{
+    flex:1 1 0;
+    display: flex;
+    flex-direction: column;    
+}
+.welcome-row{
+    text-align: center;
+    flex:1 1 0;
+}
+
+#projects{
+    display:flex;
+    flex-wrap: wrap;   
+    text-align: center;
+}
+ a{
+    flex: 1 1 33%;
+    color: black;
+    text-decoration: none;
+}
+#projects a:hover{
+    color: Darkred;
+}
+.project-tile{
+    margin-top:20px;
+    margin-bottom:20px;
+    flex: 1 1 33%;
+}
+@media screen and (max-width: 600px) {
+    .project-tile{
+        flex: 1 1 50%;
+    }
+}
+
